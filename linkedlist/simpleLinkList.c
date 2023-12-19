@@ -51,6 +51,19 @@ void deleteEnd()
     }
     return;
 }
+void deleteFront()
+{
+    struct node *temp = malloc(sizeof(struct node)); 
+    if (head == NULL)
+    {
+        printf("LinkList Is Empty ");
+        return;
+    }
+    
+    head = head->next;
+    free(temp);
+    
+}
 void display()
 {
 struct node *ptr = head;
@@ -78,6 +91,8 @@ int main()
   insertEnd(600);
   display();
   deleteEnd();
+  display();
+  deleteFront();
   display();
   return 0;
 }
