@@ -80,7 +80,7 @@ void insertFront(int val)
 }
 void insertMid(int pos,int val)
 {
-    struct node *ptr = head ,*p;
+    struct node *ptr = head;
     struct node *temp = malloc(sizeof(struct node));
     temp->data = val;
     temp->next = NULL;
@@ -140,9 +140,9 @@ int main()
   display();
   insertFront(20);// insert at the front of the list
   display();
-  insertMid(300,90); // insert New NOde After 300
+  insertMid(300,90); // insert New Node After 300
   display();
-  deletemid(300);
+  deletemid(200);
   display();
   return 0;
 }
